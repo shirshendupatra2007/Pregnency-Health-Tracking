@@ -1609,7 +1609,7 @@ function Toast({message}){
    so React Router must use it as its basename.
 */
 createRoot(document.getElementById("root")).render(
-  <BrowserRouter basename="/Pregnancy-Health-Tracking">
+  <BrowserRouter basename="/Pregnancy-Health-Tracking/">
     <App/>
   </BrowserRouter>
 );
