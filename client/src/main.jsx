@@ -1,6 +1,6 @@
 import React, { useEffect, useMemo, useState } from "react";
 import { createRoot } from "react-dom/client";
-import { BrowserRouter, Navigate, Route, Routes, Link, useNavigate, useLocation } from "react-router-dom";
+import { HashRouter, Navigate, Route, Routes, Link, useNavigate, useLocation } from "react-router-dom";
 import {
   Activity, Apple, ArrowRight, Bell, CalendarDays, Check, ChevronRight, CircleHelp,
   Clock3, Droplets, FileText, Footprints, HeartPulse, Home, Info, Leaf, LogIn,
@@ -1609,7 +1609,7 @@ function Toast({message}){
    so React Router must use it as its basename.
 */
 createRoot(document.getElementById("root")).render(
-  <BrowserRouter basename="/Pregnancy-Health-Tracking/">
+  <HashRouter>
     <App/>
-  </BrowserRouter>
+  </HashRouter>
 );
